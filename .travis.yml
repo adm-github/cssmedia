@@ -4,7 +4,6 @@ env:
 before_install: sudo apt-get install xvfb
 language: python
 install:
-  - sudo apt-get install wkhtmltopdf
   - sudo apt-get install xvfb
   - wget https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.5/wkhtmltox_0.12.5-1.trusty_i386.deb
   - sudo dpkg -i wkhtmltox_0.12.5-1.trusty_i386.deb

@@ -5,8 +5,8 @@ before_install: sudo apt-get install xvfb
 language: python
 install:
   - sudo apt-get install xvfb
-  - wget https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.5/wkhtmltox_0.12.5-1.trusty_i386.deb
-  - sudo dpkg -i wkhtmltox_0.12.5-1.trusty_i386.deb
+  - wget https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.5/wkhtmltox_0.12.5-1.trusty_amd64.deb
+  - sudo dpkg -i wkhtmltox_0.12.5-1.trusty_amd64.deb
 # start xvfb using the the DISPLAY port
 before_script:
   - "/sbin/start-stop-daemon --start --quiet --pidfile /tmp/custom_xvfb_99.pid --make-pidfile --background --exec /usr/bin/Xvfb -- $DISPLAY -ac -screen 0 1280x1024x24"
